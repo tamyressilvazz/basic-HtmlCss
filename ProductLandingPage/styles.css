@@ -74,11 +74,16 @@ a{
     margin-bottom: 20px;
     word-wrap: break-word;
 }
-#hero input[type='email']{
-    max-width: 275px;
-    width: 100%;
-    padding: 5px;
-}
+
+@media (min-width: 600px) {
+    /* Estilo para telas com largura mínima de 600px */
+    #hero input[type='email'] {
+        max-width: 275px;
+        padding: 5px;
+        width: 80%;
+    }
+  }
+
 #hero input:invalid {
     border: 2px solid red;
 }
@@ -160,8 +165,13 @@ a{
 footer{
     margin-top: 30px;
     background-color: #ddd;
-    padding: 20px 20px 20px 350px;
+    padding: 20px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
+
 footer > ul{
     display: flex;
     justify-content: flex-end;
