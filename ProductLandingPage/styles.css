@@ -8,6 +8,13 @@ body{
     background-color: #eee;
     font-family: 'Lato', sans-serif;
 }
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
 #page-wrapper{
     position: relative;
 }
@@ -34,7 +41,7 @@ header{
     margin-left: 20px;
 }
 nav{
-    font-weight: 400px;
+    font-weight: 400;
 }
 nav > ul{
     width: 35vw;
@@ -67,7 +74,7 @@ a{
     margin-bottom: 20px;
     word-wrap: break-word;
 }
-#hero input[type='search']{
+#hero input[type='email']{
     max-width: 275px;
     width: 100%;
     padding: 5px;
@@ -80,4 +87,90 @@ a{
     margin: 15px 0;
     border: 0;
     background-color: green;
+}
+
+#books{
+    margin-top: 30px;
+}
+#books .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: green;
+}
+
+#books .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+.grid{
+    display: flex;
+}
+.fa, .fas{
+    font-weight: 900;
+}
+.fa-3x{
+    font-size: 3em;
+}
+.fa, .far, .fas{
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fal, .far, .fas{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+#list-of-books{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#list-of-books > img{
+    max-width: 560px;
+    width: 100%;
+}
+
+#categories{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+footer > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li{
+    padding: 0 10px;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer > span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
 }
