@@ -79,6 +79,13 @@ a{
     width: 100%;
     padding: 5px;
 }
+#hero input:invalid {
+    border: 2px solid red;
+}
+
+#hero input:valid {
+    border: 2px solid black;
+}
 
 #hero input[type='submit']{
     max-width: 150px;
@@ -87,6 +94,7 @@ a{
     margin: 15px 0;
     border: 0;
     background-color: green;
+    border-radius: 5px;
 }
 
 #books{
@@ -98,7 +106,6 @@ a{
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: green;
 }
 
 #books .desc{
@@ -119,9 +126,7 @@ a{
 .fa-3x{
     font-size: 3em;
 }
-.fa, .far, .fas{
-    font-family: "Font Awesome 5 Free";
-}
+
 .fa, .fab, .fal, .far, .fas{
     display: inline-block;
     font-style: normal;
@@ -130,12 +135,17 @@ a{
     line-height: 1;
 }
 
+.fa-book, .fa-fire, .fa-truck{
+    color: darkgreen;
+    padding-right: 20px;
+}
+
 #list-of-books{
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
-#list-of-books > img{
+#list-of-books > iframe{
     max-width: 560px;
     width: 100%;
 }
@@ -150,7 +160,7 @@ a{
 footer{
     margin-top: 30px;
     background-color: #ddd;
-    padding: 20px;
+    padding: 20px 20px 20px 350px;
 }
 footer > ul{
     display: flex;
