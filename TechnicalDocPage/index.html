@@ -8,33 +8,349 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>Documentation</header>
+        <header>Mini Documentation - JavaScript</header>
         <ul>
             <li>
-                <a class="nav-link" href="#Introduction">Introduction</a>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#JavaScript_and_Java" class="nav-link">JavaScript & Java</a>
+            </li>
+            <li>
+                <a href="#Hello_world" class="nav-link">Hello world</a>
+            </li>
+            <li>
+                <a href="#Variables" class="nav-link">Variables</a>
+            </li>
+            <li>
+                <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+            </li>
+            <li>
+                <a href="#Variable_scopes" class="nav-link">Variable scope</a>
+            </li>
+            <li>
+                <a href="#Global_variables" class="nav-link">Global variables</a>
+            </li>
+            <li>
+                <a href="#Constants" class="nav-link">Constants</a>
+            </li>
+            <li>
+                <a href="#Data_types" class="nav-link">Data types</a>
+            </li>
+            <li>
+                <a href="#ifelse" class="nav-link">if...else</a>
+            </li>
+            <li>
+                <a href="#while" class="nav-link">if...else</a>
+            </li>
+            <li>
+                <a href="#function" class="nav-link">Function declarations</a>
+            </li>
+            <li>
+                <a href="#reference" class="nav-link">Reference</a>
             </li>
         </ul>
     </nav>
+
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
+        <section class="main-section" id="introduction">
             <header>Introduction</header>
             <article>
-                <p></p>
-            </article>
-        </section>
-        <section class="main-section">
-            <header class="main-section"></header>
-            <article>
-                <p></p>
+                <p>A programming language is a set of instructions that allows communication between humans and computers. 
+                    It is used to write programs that control the behavior of a machine and to express algorithms precisely. 
+                    Programming languages vary in syntax and purpose, from high-level languages like Python and Java to low-level languages like Assembly. 
+                    They facilitate the development of software, applications, websites, games, and much more. 
+                    The choice of language depends on the project's needs and the programmer's preferences.</p>
             </article>
         </section>
 
-        <section class="main-section">
-            <header>References</header>
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript & Java</header>
+            <article>
+                <p>JavaScript and Java are two popular programming languages, but they have different purposes and distinct characteristics.</p>
+                <h2>JavaScript</h2>
+                <p>
+                    <ul>
+                        <li><strong>Type:</strong> Scripting language.</li>
+                        <li><strong>Main Use:</strong> Web development, especially for adding interactivity to websites and web applications.</li>
+                        <li><strong>Execution:</strong> Interpreted by web browsers.</li>
+                        <li><strong>Syntax:</strong> Similar to other C-based programming languages.</li>
+                        <li><strong>Features:</strong> Supports DOM manipulation, events, AJAX, and more.</li>
+                        <li><strong>Popular Frameworks and Libraries:</strong> React, Angular, Vue.js, Node.js.</li>
+                    </ul>
+                </p>
+                <h2>Java</h2>
+                <p>
+                    <ul>
+                        <li><strong>Type:</strong> Object-oriented programming language.</li>
+                        <li><strong>Main Use:</strong> Enterprise applications, mobile applications (especially Android), embedded systems, and web applications.</li>
+                        <li><strong>Execution:</strong> Compiled to bytecode and run on the Java Virtual Machine (JVM).</li>
+                        <li><strong>Syntax:</strong> Strictly typed with a more robust syntax.</li>
+                        <li><strong>Features:</strong> Supports multithreading, automatic garbage collection, large standard library.</li>
+                        <li><strong>Popular Frameworks:</strong> Spring, Hibernate, JavaFX.</li>
+                    </ul>
+                </p>
+                <h2>Key Differences:</h2>
+                <ul>
+                    <li><strong>Execution Environment:</strong> JavaScript is executed in the browser, while Java is executed on the JVM.</li>
+                    <li><strong>Typing:</strong> JavaScript is dynamically typed, while Java is statically typed.</li>
+                    <li><strong>Applications:</strong> JavaScript is mainly used for front-end web development, while Java is used for backend applications, mobile applications, and enterprise systems.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="hello_world">
+            <header>Hello World</header>
+            <article>
+                Example 1: Using a function
+                <br>
+                <code>
+                    function helloWorld() {
+                        return "Hello, World!";
+                      }
+                      
+                      console.log(helloWorld());
+                </code>
+                <br>
+                Exemplo 2: Using a alert
+                <br>
+                <code>
+                    alert("Hello, World!");
+                </code>
+                <br>
+                Example 3: Writing directly in HTML
+                <br>
+                <code>document.write("Hello, World!");</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header>Variables</header>
+            <p>
+                <ul>
+                    <li>var: Declares a variable, optionally initializing it with a value. It has function scope.</li>
+                    <li>let: Declares a block-scoped local variable, optionally initializing it with a value.</li>
+                    <li>const: Declares a block-scoped constant, which must be initialized at the time of declaration.</li>
+                </ul>
+            </p>
+            <h3>Primitive types in JavaScript include:</h3>
+            <p>
+                <ul>
+                    <li>number: Integer and floating-point numbers.</li>
+                    <li>string: Strings of characters.</li>
+                    <li>boolean: True or false.</li>
+                    <li>undefined: Default value of uninitialized variables.</li>
+                    <li>null: Represents intentional absence of value.</li>
+                    <li>symbol: Immutable and unique data type.</li>
+                    <li>bigint: For large integers.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="main-section" id="declaring_variables">
+            <header>declaring variables</header>
+            <article>
+                Using var:
+                <p>
+                    <code>
+                        var name = 'Alice';
+                    </code>
+                </p>
+                <p>
+                    Using let:
+                    <code>let year = 2020;</code>
+                </p>
+                <p>
+                    Using const:
+                    <code>const pi = 3.14159;</code>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="variable_scope">
+            <header>Variable scope</header>
+            <article>
+                <p>In JavaScript, variables can have different scopes depending on how they are declared:</p>
+                <p>
+                    <ul>
+                        <li>Global Scope: Variables declared outside any function or block have global scope, accessible from any part of the code.</li>
+                        <code>var globalVar = "I am available everywhere"</code>
+                        <li>Function Scope: Variables declared inside a function using var are limited to that function's scope and are not accessible outside of it.</li>
+                        <code>function localScope() {
+                            var localVar = "I am available only within this function";
+                            console.log(localVar); // Accesses the local variable
+                        }</code>
+                        <li>Block Scope: Variables declared with let or const inside a block (such as { ... }) are limited to that block's scope. 
+                            This includes control structures like loops and conditionals.
+                        </li>
+                        <code>
+                            if (true) {
+                                let blockLet = "I am available only within this block";
+                                const blockConst = "I am also available only within this block";
+                                console.log(blockLet); // Accesses the block-scoped variable
+                                console.log(blockConst); // Accesses the block-scoped variable
+                            }
+                        </code>
+                        <li>Hoisting: var variable declarations are "hoisted" to the top of their scope, allowing them to be used before they are declared but not initialized. 
+                            let and const variables are also hoisted but cannot be accessed before their declaration.
+                        </li>
+                        <code>
+                            console.log(hoistedVar); // undefined, because the declaration was hoisted
+                            var hoistedVar = "I am hoisted but not initialized";
+                            
+                            // console.log(hoistedLet); // This would cause an error because let and const cannot be accessed before declaration
+                            let hoistedLet = "I cannot be accessed before declaration";
+                        </code>
+                    </ul>
+                    <code></code>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="global_variables">
+            <header>Global variables</header>
+            <article>
+                <p>
+                    Global variables in JavaScript are those declared outside any function or block, making them accessible from any part of the code. 
+                    They can be created with var, let, or const, but global variables are not recommended due to the risk of name conflicts and debugging difficulties. 
+                    Excessive use of global variables can lead to less modular and harder-to-maintain code. 
+                    It's a good practice to limit the scope of variables as much as possible to improve code readability and maintainability.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="constants">
+            <header>Constants</header>
+            <article>
+                <p>
+                    In JavaScript, constants are declared using the const keyword. A constant must be initialized at the time of declaration, and its value cannot be reassigned later. 
+                    Constants have block scope, meaning they are accessible only within the block where they were defined. 
+                    Although the value of a constant cannot be changed, if the value is an object or array, its properties or elements can be modified. 
+                    Using const is ideal for values that should remain immutable throughout the code.
+                </p>
+                <code>const favoriteColor = 'blue';</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="data_types">
+            <header>Data types</header>
+            <article>
+                <h2>Primitive Types</h2>
+                <p>
+                    <ul>
+                        <li>Number: Represents numbers, including integers and floating-point numbers.</li>
+                        <li>String: Sequences of characters used to represent text.</li>
+                        <li>Boolean: Logical values that can be true or false.</li>
+                        <li>Undefined: The default value for variables that have not been initialized.</li>
+                        <li>Null: Represents an intentional absence of value.</li>
+                        <li>Symbol: Unique and immutable values, used to uniquely identify object properties.</li>
+                        <li>BigInt: Used to represent large integers beyond the limit of the Number type.</li>
+                    </ul>
+                </p>
+                <h2>Complex Types</h2>
+                <p>
+                    <ul>
+                        <li>Objects: Structures that allow storing collections of data and more complex entities.</li>
+                        <li>Arrays: Ordered lists of values that can be of different types.</li>
+                        <li>Functions: Blocks of code that can be called and executed later.</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="ifelse">
+            <header>If else</header>
+            <article>
+                <p>The if...else control flow in JavaScript is used to execute different blocks of code based on specific conditions.</p>
+                <h2>Structure</h2>
+                <code>
+                    if (number > 5) {
+                        console.log("The number is greater than 5");
+                    } else {
+                        console.log("The number is 5 or less");
+                    }
+                </code>
+                <h2>Multiple Conditions</h2>
+                <code>
+                    let grade = 85;
+
+                    if (grade >= 90) {
+                        console.log("A");
+                    } else if (grade >= 80) {
+                        console.log("B");
+                    } else if (grade >= 70) {
+                        console.log("C");
+                    } else {
+                        console.log("F");
+                    }
+                </code>
+                <h2>Nested Conditions</h2>
+                <code>
+                    let age = 20;
+                    let hasPermission = true;
+
+                    if (age >= 18) {
+                        if (hasPermission) {
+                            console.log("You may enter.");
+                        } else {
+                            console.log("Permission is required.");
+                        }
+                    } else {
+                        console.log("Entry is prohibited.");
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="while">
+            <header>While</header>
+            <article>
+                <p>The while loop in JavaScript is used to execute a block of code repeatedly while a specified condition is true. 
+                    It is useful when you do not know beforehand how many times the block of code needs to be executed.
+                </p>
+
+                <h2>Syntax</h2>
+                <code>
+                    let count = 0;
+
+                    while (count < 5) {
+                        console.log("Count is: " + count);
+                        count++;
+                    }
+                </code>
+                <p>
+                    In this example, the code inside the while block will execute as long as the variable count is less than 5.
+                    With each iteration, the value of count is incremented by 1.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="function_declaration">
+            <header>function declaration</header>
+            <article>
+                <p>
+                    Functions in JavaScript are blocks of code designed to perform a specific task and can be executed whenever needed. 
+                    They allow for code reuse, modularity, and improved readability. Functions can be declared using the function keyword or as arrow functions. 
+                    They can take parameters and return values. Here's a basic example of a function declaration:
+                </p>
+                <code>
+                    function greet(name) {
+                        return "Hello, " + name;
+                    }
+                    
+                    console.log(greet("Alice")); // Outputs: Hello, Alice                    
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
             <article>
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript?form=MG0AV3" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="https://docs.oracle.com/javase/8/docs/?form=MG0AV3" target="_blank"></a>
                     </li>
                 </ul>
             </article>
